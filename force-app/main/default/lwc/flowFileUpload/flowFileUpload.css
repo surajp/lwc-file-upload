@@ -1,0 +1,63 @@
+@keyframes progress {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -70px 0;
+  }
+}
+.dropzone {
+  position: relative;
+  width: 100%;
+  min-height: 250px;
+  background-color: #f0f0f0;
+  border: dashed;
+  border-color: #c8c8c8;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.stripes {
+  border: solid;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #f0f0f0,
+    #f0f0f0 25px,
+    #c8c8c8 25px,
+    #c8c8c8 50px
+  );
+  animation: progress 2s linear infinite !important;
+  background-size: 150% 100%;
+}
+.rejectstripes {
+  border: solid;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #fc8785,
+    #fc8785 25px,
+    #f4231f 25px,
+    #f4231f 50px
+  );
+  animation: progress 2s linear infinite !important;
+  background-size: 150% 100%;
+}
+.dropzonetextstyle {
+  text-align: center;
+}
+.uploadiconsize {
+  width: 51;
+  height: 51;
+  color: #909090;
+}
+.dropzoneparagraph {
+  font-size: 24;
+}
+.message {
+  font: 15px bold;
+  margin-top: 8px;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}

@@ -1,0 +1,13 @@
+<template>
+  <input type="file" name="file" data-id="file" style="visibility: hidden;" />
+  <div
+    data-id="drop_zone"
+    ondrop={handleDrop}
+    class={classNames}
+    ondragover={handleDrag}
+    ondragenter={handleDragEnter}
+    ondragleave={handleDragLeave}
+    ondragend={handleDragLeave}
+  ></div>
+  <span class={messageClassName}>{snackbarMessage}</span>
+</template>
